@@ -265,7 +265,7 @@ h6 {
 	background-color: rgb(213, 213, 213);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
 	html {
 		font-size: 30%;
 	}
@@ -285,7 +285,7 @@ h6 {
 	}
 	.rules-btn {
 		position: fixed;
-		bottom: 15%;
+		bottom: 12%;
 		right: 50%;
 		transform: translate(50%);
 	}
