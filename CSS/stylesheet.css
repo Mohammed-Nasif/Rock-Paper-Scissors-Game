@@ -344,33 +344,3 @@ h6 {
 	}
 }
 
-@media screen and (min-width: 800px) {
-	html {
-		font-size: 35%;
-	}
-	.game-info > img {
-		width: 50%;
-	}
-	.scoreboard {
-		width: 18rem;
-		height: 15rem;
-	}
-	.scoreboard h6 {
-		font-size: 3.2rem;
-		margin-bottom: 5px;
-	}
-	.select-shape {
-		width: 25%;
-		height: 40%;
-	}
-	.rules-btn {
-		transform: scale(1.5);
-	}
-	.rules > h1 {
-		margin: 0;
-		font-size: 5rem;
-	}
-	.rules {
-		transform: translate(-50%, -50%) scale(1.5);
-	}
-}
