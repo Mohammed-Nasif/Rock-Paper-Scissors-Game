@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="Images/favicon-32x32.png" />
+		<link rel="stylesheet" href="CSS/stylesheet.css" />
+		<!--Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Google Fonts-->
+		<title>Rock - Paper - Scissors Game</title>
+	</head>
+	<body>
+		<div class="container1">
+			<div class="game-info">
+				<img src="Images/logo.svg" alt="Game Logo" />
+				<div class="scoreboard">
+					<h6>Score</h6>
+					<h1 class="scrnum">12</h1>
+				</div>
+			</div>
+			<div class="select-shape">
+				<img src="Images/bg-triangle.svg" alt="" />
+				<div
+					class="icon shape1"
+					style="
+						width: 18rem;
+						height: 18rem;
+						border-radius: 50%;
+						background-color: rgb(232, 232, 232);
+						border: 20px solid hsl(40, 84%, 53%);
+						box-shadow: 0px 0.7rem 0px 0px hsl(39deg 90% 46%),
+							0px 0.7rem 0px 0px rgb(204 201 201) inset;
+						padding: 3rem;
+					"
+					data-shape="1"
+				>
+					<img src="Images/icon-scissors.svg" alt="Scissors" />
+				</div>
+				<div
+					class="icon shape2"
+					style="
+						width: 18rem;
+						height: 18rem;
+						border-radius: 50%;
+						background-color: rgb(232, 232, 232);
+						border: 20px solid hsl(230, 89%, 65%);
+						box-shadow: 0px 0.7rem 0px 0px hsl(230, 89%, 62%),
+							0px 0.7rem 0px 0px rgb(204 201 201) inset;
+						padding: 3rem;
+					"
+					data-shape="2"
+				>
+					<img src="Images/icon-paper.svg" alt="Paper" />
+				</div>
+				<div
+					class="icon shape3"
+					style="
+						width: 18rem;
+						height: 18rem;
+						border-radius: 50%;
+						background-color: rgb(232, 232, 232);
+						border: 20px solid hsl(349, 70%, 56%);
+						box-shadow: 0px 0.7rem 0px 0px hsl(349, 71%, 52%),
+							0px 0.7rem 0px 0px rgb(204 201 201) inset;
+						padding: 3rem;
+					"
+					data-shape="3"
+					><img src="Images/icon-rock.svg" alt="Rock"
+				/></div>
+			</div>
+			<div class="secondScreen">
+				<div class="your-selection">
+					<h2>YOU PICKED</h2>
+					<div class="yourpick"> <div class="ll"></div></div>
+				</div>
+				<div>
+					<h2>THE HOUSE PICKED</h2>
+					<div class="housepick"> <div class="ll"></div></div>
+				</div>
+			</div>
+			<div class="rules-btn">Rules</div>
+		</div>
+		<div class="rules">
+			<h1>Rules</h1>
+			<p class="close-rules">X</p>
+			<img src="Images/image-rules.svg" alt="Game Rules" />
+		</div>
+		<div class="result">
+			<h1 class="youlw">YOU WIN</h1>
+			<button class="playagain">PLAY AGAIN</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
+
+<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div> -->

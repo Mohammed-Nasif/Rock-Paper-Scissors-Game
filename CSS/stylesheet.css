@@ -1,0 +1,376 @@
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+.container1 {
+	height: 100vh;
+	width: 100%;
+	filter: brightness(50%);
+	position: relative;
+}
+.game-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50rem;
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 0.3rem solid hsl(217, 16%, 45%);
+	border-radius: 1.5rem;
+	padding: 1.5rem 2.5rem;
+}
+.scoreboard {
+	background-color: rgb(232, 232, 232);
+	width: 13rem;
+	height: 10rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	margin: -0.5rem;
+	color: hsl(229, 25%, 31%);
+	font-size: 5.6rem;
+}
+h6 {
+	margin: -0.2rem;
+	color: hsla(229, 64%, 46%, 0.789);
+	font-size: 1.8rem;
+}
+.select-shape {
+	width: 30%;
+	height: 40%;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+}
+.select-shape > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.select-shape .shape1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	top: -15%;
+	right: -15%;
+}
+.select-shape .shape2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	top: -15%;
+	left: -15%;
+}
+.select-shape .shape3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: absolute;
+	bottom: -15%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.icon > img {
+	width: 100%;
+	height: 100%;
+}
+.rules-btn {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+	font-size: 18px;
+	letter-spacing: 4px;
+	color: white;
+	border: 1px solid white;
+	padding: 1rem 3rem;
+	border-radius: 1rem;
+}
+.rules {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	width: 38rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	z-index: 1000;
+}
+.rules > img {
+	margin-top: 4rem;
+	width: 80%;
+}
+.rules > h1 {
+	margin: 0;
+	font-size: 3.2rem;
+	align-self: start;
+}
+.rules > p {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	margin: 0;
+	font-size: 2.8rem;
+	opacity: 0.2;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.rules > p:hover {
+	opacity: 1;
+}
+
+.secondScreen {
+	width: 80rem;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 0px;
+	gap: 8rem;
+	transition: 0.3s linear;
+}
+
+.secondScreen h2 {
+	margin: 0;
+	color: white;
+	letter-spacing: 1px;
+}
+.secondScreen div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8rem;
+}
+.secondScreen div .yourpick,
+.secondScreen div .housepick {
+	width: 19rem;
+	height: 19rem;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+	/* animation: pulse 1.5s linear infinite alternate; */
+}
+.ll {
+	position: absolute;
+	width: 17rem;
+	height: 17rem;
+	border-radius: 50%;
+	z-index: -1;
+	/* animation: pulse 1.5s linear infinite alternate; */
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.1);
+		background-color: rgba(255, 255, 255, 0.2);
+	}
+	25% {
+		transform: scale(1.2);
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	75% {
+		transform: scale(1.3);
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+	100% {
+		transform: scale(1.4);
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@keyframes opa {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.4;
+	}
+	80% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.result {
+	position: fixed;
+	bottom: 40%;
+	left: 50%;
+	transform: translate(-50%);
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20rem;
+}
+.result > h1 {
+	color: white;
+	font-weight: 600;
+	font-size: 5.4rem;
+	margin-bottom: 1rem;
+}
+.result > button {
+	color: rgb(38, 43, 62);
+	font-size: 1.5rem;
+	border-style: none;
+	width: 105%;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.result > button:hover {
+	background-color: rgb(213, 213, 213);
+}
+
+@media (max-width: 420px) {
+	html {
+		font-size: 30%;
+	}
+	.game-info > img {
+		width: 50%;
+	}
+	.scoreboard {
+		width: 14rem;
+		height: 11rem;
+	}
+	.scoreboard h6 {
+		font-size: 2.8rem;
+	}
+	.select-shape {
+		width: 50%;
+		height: 28%;
+	}
+	.rules-btn {
+		position: fixed;
+		bottom: 5%;
+		right: 50%;
+		transform: translate(50%);
+	}
+	.rules > h1 {
+		margin: 0;
+		font-size: 8rem;
+		align-self: auto;
+	}
+	.rules {
+		height: 100%;
+		border-radius: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 60px;
+		padding-top: 18rem;
+		width: 100%;
+	}
+	.rules > p {
+		position: absolute;
+		top: 130rem;
+		right: 50%;
+		margin: 0;
+		font-size: 5.8rem;
+		transform: translateX(50%);
+	}
+}
+
+@media (min-width: 1366px) {
+	html {
+		font-size: 70%;
+	}
+	.game-info > img {
+		width: 50%;
+	}
+	.scoreboard {
+		width: 18rem;
+		height: 15rem;
+	}
+	.scoreboard h6 {
+		font-size: 3.2rem;
+	}
+	.select-shape {
+		width: 50%;
+		height: 40%;
+	}
+	.rules-btn {
+		transform: scale(1.5);
+	}
+	.rules > h1 {
+		margin: 0;
+		font-size: 5rem;
+	}
+	.rules {
+		transform: translate(-50%, -50%) scale(1.5);
+	}
+}
+
+@media screen and (min-width: 800px) {
+	html {
+		font-size: 35%;
+	}
+	.game-info > img {
+		width: 50%;
+	}
+	.scoreboard {
+		width: 18rem;
+		height: 15rem;
+	}
+	.scoreboard h6 {
+		font-size: 3.2rem;
+		margin-bottom: 5px;
+	}
+	.select-shape {
+		width: 25%;
+		height: 40%;
+	}
+	.rules-btn {
+		transform: scale(1.5);
+	}
+	.rules > h1 {
+		margin: 0;
+		font-size: 5rem;
+	}
+	.rules {
+		transform: translate(-50%, -50%) scale(1.5);
+	}
+}
