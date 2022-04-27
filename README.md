@@ -24,8 +24,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/Mohammed-Nasif/Rock-Paper-Scissors-Game)
+- Live Site URL: [Live Demo](https://mohammed-nasif.github.io/Rock-Paper-Scissors-Game/)
 
 ### Built with
 
